@@ -3,57 +3,42 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Calculadora.Classes;
 
 namespace Calculadora.Classes
 {
-    class Controle
+    public class Controle
     {
-        public Double Valor1;
-        public Double Valor2;
-        public Double Resultado;
-
-        public void Converte(String PrimeiroNumero, String SegundoNumero) //converte os numeros de entrada pelo usuario
+        public String Converte(String Valor1, String Valor2, Double TipoDeCalculo) //metodo converte da classe controle
         {
-            this.Valor1 = Convert.ToDouble(PrimeiroNumero);
-            this.Valor2 = Convert.ToDouble(SegundoNumero);
-        }
-
-        public void Processamentos(int Identificador) //identifica qual operacao o usuario clicou
-        {
-            switch(Identificador)
+            Operacoes Op = new Operacoes();
+            String ResultadoCalculo = "";
+            try
             {
-                case 1:
-                    Somar();
-                    break;
-
-                case 2:
-                    Subtrair();
-                    break;
-                case 3:
-                    Dividir();
-                    break;
-                case 4:
-                    Multiplicar();
-                    break;
+                Op.Valor1 = Convert.ToDouble(Valor1);
+                Op.Valor2 = Convert.ToDouble(Valor2);
+                switch(TipoDeCalculo)
+                {
+                    case 1:
+                        ResultadoCalculo = Op.Somar();
+                        break;
+                    case 2:
+                        ResultadoCalculo = Op.Subtrair();
+                        break;
+                    case 3:
+                        ResultadoCalculo = Op.Dividir();
+                        break;
+                    case 4:
+                        ResultadoCalculo = Op.Multiplicar();
+                        break;
+                }
             }
-           
-        }
-
-        public void Somar()
-        {
-            this.Resultado = this.Valor1 + this.Valor2;
-        }
-        public void Subtrair()
-        {
-            this.Resultado = this.Valor1 - this.Valor2;
-        }
-        public void Dividir()
-        {
-            this.Resultado = this.Valor1 / this.Valor2;
-        }
-        public void Multiplicar()
-        {
-            this.Resultado = this.Valor1 * this.Valor2;
-        }
+            catch (Exception)
+            {
+                ResultadoCalculo = ("Caracter inválido!");
+                return ResultadoCalculo;
+            }
+            return ResultadoCalculo;
+        } //fim metodo converte
     }
 }
