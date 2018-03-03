@@ -18,3 +18,13 @@ C:\Users\Guilherme\Desktop\Calculadora Casa\Calculadora\obj\Debug\Calculadora.cs
 C:\Users\Guilherme\Desktop\Calculadora Casa\Calculadora\obj\Debug\Calculadora.csproj.CoreCompileInputs.cache
 C:\Users\Guilherme\Desktop\Calculadora Casa\Calculadora\obj\Debug\Calculadora.exe
 C:\Users\Guilherme\Desktop\Calculadora Casa\Calculadora\obj\Debug\Calculadora.pdb
+C:\Users\Guilherme\Desktop\Calculadora\Calculadora\obj\Debug\Calculadora.csprojResolveAssemblyReference.cache
+C:\Users\Guilherme\Desktop\Calculadora\Calculadora\obj\Debug\Calculadora.frmPrincipal.resources
+C:\Users\Guilherme\Desktop\Calculadora\Calculadora\obj\Debug\Calculadora.Properties.Resources.resources
+C:\Users\Guilherme\Desktop\Calculadora\Calculadora\obj\Debug\Calculadora.csproj.GenerateResource.Cache
+C:\Users\Guilherme\Desktop\Calculadora\Calculadora\obj\Debug\Calculadora.csproj.CoreCompileInputs.cache
+C:\Users\Guilherme\Desktop\Calculadora\Calculadora\obj\Debug\Calculadora.exe
+C:\Users\Guilherme\Desktop\Calculadora\Calculadora\obj\Debug\Calculadora.pdb
+C:\Users\Guilherme\Desktop\Calculadora\Calculadora\bin\Debug\Calculadora.exe.config
+C:\Users\Guilherme\Desktop\Calculadora\Calculadora\bin\Debug\Calculadora.exe
+C:\Users\Guilherme\Desktop\Calculadora\Calculadora\bin\Debug\Calculadora.pdb

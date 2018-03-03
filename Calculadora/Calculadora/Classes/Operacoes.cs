@@ -8,11 +8,38 @@ namespace Calculadora.Classes
 {
     class Operacoes
     {
-        Classes.Controle c = new Classes.Controle();
+        public Double Valor1;
+        public Double Valor2;
+        public Double resposta;
+        public String resultado;
 
-        public void Somar(Double valor1, Double valor2)
+        public String Somar()
         {
-
+            resposta = Valor1 + Valor2;
+            resultado = resposta.ToString();
+            return resultado;
+        }
+        public String Subtrair()
+        {
+            resposta = Valor1 - Valor2;
+            resultado = resposta.ToString();
+            return resultado;
+        }
+        public String Dividir()
+        {
+            if(this.Valor1 == 0)
+            {
+                return resultado = "Erro, divisão por zero!";
+            }
+            resposta = Valor1 / Valor2;
+            resultado = resposta.ToString();
+            return resultado;
+        }
+        public String Multiplicar()
+        {
+            resposta = Valor1 * Valor2;
+            resultado = resposta.ToString();
+            return resultado;
         }
     }
 }
